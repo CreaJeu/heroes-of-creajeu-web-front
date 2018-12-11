@@ -5,14 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HerosheetComponent } from './herosheet/herosheet.component';
 import { HeroeslistComponent } from './heroeslist/heroeslist.component';
-import { AchievementlistComponent } from './achievementlist/achievementlist.component'
+import { AchievementlistComponent } from './achievementlist/achievementlist.component';
+import { DashboardComponent } from './dashboard/dashboard.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HerosheetComponent,
     HeroeslistComponent,
-    AchievementlistComponent
+    AchievementlistComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
