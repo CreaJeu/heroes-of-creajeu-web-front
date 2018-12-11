@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Achievement } from '../achievement';
-import { DATA_ACHIEVEMENTS } from '../mock-achievements'
+import { AchievementService } from '../achievement.service'
 
 @Component({
   selector: 'app-achievementlist',
@@ -9,11 +9,13 @@ import { DATA_ACHIEVEMENTS } from '../mock-achievements'
 })
 export class AchievementlistComponent implements OnInit {
 
-  constructor() { }
+  constructor(private achievementService: AchievementService) { }
 
-  achievements: Achievement[] = DATA_ACHIEVEMENTS;
+  achievements: Achievement[];
 
   ngOnInit() {
+    this.achievementService.getAchievements()
+      .subscribe(_achievements => this.achievements = _achievements); 
   }
 
 }
