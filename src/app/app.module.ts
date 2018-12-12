@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { HerosheetComponent } from './herosheet/herosheet.component';
 import { HeroeslistComponent } from './heroeslist/heroeslist.component';
 import { AchievementlistComponent } from './achievementlist/achievementlist.component';
-import { DashboardComponent } from './dashboard/dashboard.component'
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DashboardComponent } from './dashboard/dashboard.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

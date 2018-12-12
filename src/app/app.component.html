@@ -1,7 +1,13 @@
-<h1>{{title}}</h1>
-<nav>
-    <a routerLink="/dashboard">Dashboard</a><br>
-    <a routerLink="/heroes">Heroes</a><br>
-    <a routerLink="/achievements">Achievements</a>
+<mat-toolbar color="primary">
+  <span>{{title}}</span>
+</mat-toolbar>
+
+<nav mat-tab-nav-bar>
+  <a mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.path">
+    {{link.label}}
+  </a>
 </nav>
+
 <router-outlet></router-outlet>

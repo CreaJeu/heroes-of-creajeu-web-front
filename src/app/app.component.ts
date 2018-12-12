@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Heroes of CreaJeu';
+  navLinks = [
+    { path: 'dashboard', label:'Dashboard'},
+    { path: 'heroes', label:'Heroes'},
+    { path: 'achievements', label:'Achievements'}
+  ];
 }
