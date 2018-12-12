@@ -1,0 +1,10 @@
+.achievementsgrid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    margin: 20px;
+}
+.achievementscard {
+    max-width: 200px;
+}

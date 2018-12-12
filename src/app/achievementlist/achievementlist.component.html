@@ -1,5 +1,16 @@
-<ul class="achivementlist">
-  <li class="achievement" *ngFor='let ach of achievements'>
-    <span>{{ach.id}}</span> {{ach.bonus}} {{ach.description}}
-  </li>
-</ul>
+<div class='achievementsgrid'>
+  <mat-card *ngFor='let ach of achievements' class="achievementscard">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <!--TODO: insert avatar image-->
+      </div>
+      <mat-card-title>ID = {{ach.id}}</mat-card-title>
+      <mat-card-subtitle>+{{ach.bonus}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+          {{ach.description}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,7 +1,18 @@
-<ul class="heroes">
-  <li class="hero" *ngFor='let hero of heroes' [class.selected]='hero === selectedHero' (click)='onSelect(hero)'>
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
-  </li>
-</ul>
+<div class='heroesgrid'>
+  <mat-card *ngFor='let hero of heroes' class="herocard" [class.selected]='hero === selectedHero' (click)='onSelect(hero)'>
+    <mat-card-header>
+      <div mat-card-avatar>
+        <!--TODO: insert avatar image-->
+      </div>
+      <mat-card-title>{{hero.name}}</mat-card-title>
+      <mat-card-subtitle>subtitle</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        Short description.
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
 
 <app-herosheet [hero]='selectedHero'></app-herosheet>
