@@ -1,3 +1,5 @@
+<app-herosheet [hero]='selectedHero'></app-herosheet>
+
 <div class='heroesgrid'>
   <mat-card *ngFor='let hero of heroes' class="herocard" [class.selected]='hero === selectedHero' (click)='onSelect(hero)'>
     <mat-card-header>
@@ -14,5 +16,3 @@
     </mat-card-content>
   </mat-card>
 </div>
-
-<app-herosheet [hero]='selectedHero'></app-herosheet>

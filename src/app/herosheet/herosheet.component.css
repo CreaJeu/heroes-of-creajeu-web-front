@@ -1,10 +1,9 @@
 .herosheet {
-    margin: 10px;
-    color: purple;
-    float: left;
-    width: 30%;
+    margin: 20px;
+    color: #EFEEEE;
+    float: right;
+    min-width: 40%;
 }
-
 .herosheet h2 {
-    color: red;
+    text-align: center;
 }

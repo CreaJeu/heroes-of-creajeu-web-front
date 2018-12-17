@@ -1,16 +1,16 @@
 .heroesgrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 20px;
     align-items: stretch;
-    margin: 10px;
-    min-width: 50%;
+    margin: 20px;
+    min-width: 40%;
     float: left;
 }
 .herocard {
     max-width: 200px;
-    background-color: #f2bb13;
+    background-color: #EFEEEE;
 }
 .selected {
-    background-color: rgb(184, 126, 88) !important;
+    background-color: #98D7D1;
 }
