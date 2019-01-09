@@ -5,4 +5,10 @@
     <div class='appearance' >
         <!--TODO: Here, display a visual of the hero-->
     </div>
+
+    <div class='unlockedachievements'>
+        <div class='unlockedach' *ngFor='let ach of heroAchievements'>
+            {{ach.id}}
+        </div>
+    </div>
 </div>

@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Hero } from '../hero';
+import { Achievement } from '../achievement';
+import { AchievementService } from '../achievement.service'
 
 @Component({
   selector: 'app-herosheet',
@@ -8,12 +10,21 @@ import { Hero } from '../hero';
 })
 export class HerosheetComponent implements OnInit {
 
-  constructor() {
-  }
+  constructor(private achievementService: AchievementService) {}
 
-  @Input() hero : Hero;
+  private _hero : Hero;
+  heroAchievements: Achievement[];
+
+  get hero(): Hero { return this._hero; }
+
+  @Input()
+  set hero(h: Hero) {
+    if(!h) return;
+    this._hero = h;
+    this.achievementService.getHeroAchievements(this._hero)
+      .subscribe(_achievements => this.heroAchievements = _achievements);
+  }
 
   ngOnInit() {
   }
-
 }

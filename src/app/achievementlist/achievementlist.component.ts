@@ -15,7 +15,7 @@ export class AchievementlistComponent implements OnInit {
 
   ngOnInit() {
     this.achievementService.getAchievements()
-      .subscribe(_achievements => this.achievements = _achievements); 
+      .subscribe(_achievements => this.achievements = _achievements);
   }
 
 }
