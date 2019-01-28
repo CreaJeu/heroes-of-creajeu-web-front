@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Hero } from './hero'
-import { DATA_HEROES } from './mock-heroes'
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HeroService {
 
-  getHeroes(): Observable<Hero[]> 
-  {
-    return of(DATA_HEROES);
-  }
+  constructor(private http: HttpClient) { }
 
-  constructor() { }
+  getHeroes(): Observable<Hero[]>
+  {
+    return this.http.get<Hero[]>('http://localhost:3000/heroes'); // TODO: do not use hard url
+  }
 }

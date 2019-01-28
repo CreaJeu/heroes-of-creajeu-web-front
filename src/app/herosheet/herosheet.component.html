@@ -7,8 +7,8 @@
     </div>
 
     <div class='unlockedachievements'>
-        <div class='unlockedach' *ngFor='let ach of heroAchievements'>
-            {{ach.id}}
+        <div *ngFor='let ach of heroAchievements'>
+            {{ach.ach_obtained}} {{ach.ach_title}} +{{ach.ach_xp_bonus}} <!--WARNING: attribute names does not respect the declared data structure -->
         </div>
     </div>
 </div>
