@@ -2,9 +2,9 @@
   <mat-card *ngFor='let ach of achievements' class="achievementcard">
     <mat-card-content>
       <div class="achievementlogo">
-        <!--TODO: insert achievement image here -->
+          <img width="50" src="./assets/img/achievements/{{ach.id}}.png"/>
       </div>
-      <h2>{{ach.title}}</h2>
+      <h2>{{ach.title}} +{{ach.xp_bonus}}</h2>
       <p>{{ach.description}}</p>
     </mat-card-content>
   </mat-card>

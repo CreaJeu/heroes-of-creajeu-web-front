@@ -13,7 +13,7 @@ export class AchievementService {
 
   getAchievements(): Observable<Achievement[]> {
     var url = 'http://localhost:3000/achievements'; // TODO: do not use hardcoded hostname
-    return this.http.get<Achievement[]>(url); 
+    return this.http.get<Achievement[]>(url);
   }
 
   getHeroAchievements(hero: Hero): Observable<Achievement[]> {

@@ -3,11 +3,12 @@
     <p>{{hero.name}}'s ID is {{hero.id}}.</p>
 
     <div class='appearance' >
-        <!--TODO: Here, display a visual of the hero-->
+        <img width="350" src="./assets/img/avatars/{{hero.id}}.png"/>
     </div>
 
     <div class='unlockedachievements'>
         <div *ngFor='let ach of heroAchievements'>
+            <img width='50' src='./assets/img/achievements/{{ach.ach_id}}.png'/>
             {{ach.ach_obtained}} {{ach.ach_title}} +{{ach.ach_xp_bonus}} <!--WARNING: attribute names does not respect the declared data structure -->
         </div>
     </div>

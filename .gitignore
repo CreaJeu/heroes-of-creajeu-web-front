@@ -41,3 +41,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# specific to the app
+src/assets/img/avatars/*
+src/assets/img/achievements/*

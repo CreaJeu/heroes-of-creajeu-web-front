@@ -12,6 +12,6 @@ export class HeroService {
 
   getHeroes(): Observable<Hero[]>
   {
-    return this.http.get<Hero[]>('http://localhost:3000/heroes'); // TODO: do not use hard url
+    return this.http.get<Hero[]>('http://localhost:3000/view_heroes'); // TODO: do not use hard url
   }
 }
