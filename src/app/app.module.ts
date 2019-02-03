@@ -9,7 +9,8 @@ import { AchievementlistComponent } from './achievementlist/achievementlist.comp
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './material.module';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { HistoryComponent } from './history/history.component'; 
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     HerosheetComponent,
     HeroeslistComponent,
     AchievementlistComponent,
-    DashboardComponent
+    DashboardComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

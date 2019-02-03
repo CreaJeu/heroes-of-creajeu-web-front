@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Heroes of CreaJeu';
   navLinks = [
     { path: 'dashboard', label:'Dashboard'},
+    { path: 'history', label:'History'},
     { path: 'heroes', label:'Heroes'},
     { path: 'achievements', label:'Achievements'}
   ];
