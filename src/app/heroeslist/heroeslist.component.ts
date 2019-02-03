@@ -13,10 +13,17 @@ export class HeroeslistComponent implements OnInit {
 
   heroes: Hero[];
   selectedHero: Hero;
+  
+  private refreshView(_heroes: Hero[]) {
+    this.heroes = _heroes;
+    if(this.heroes.length > 0) {
+      this.selectedHero = this.heroes[0];
+    }
+  }
 
   ngOnInit() {
-    this.heroService.getHeroes()
-      .subscribe(_heroes => this.heroes = _heroes);
+    this.heroService.getHeroes().subscribe(
+      _heroes => this.refreshView(_heroes));
   }
 
   onSelect(hero: Hero) {

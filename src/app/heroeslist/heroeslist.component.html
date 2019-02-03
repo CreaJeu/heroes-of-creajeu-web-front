@@ -1,18 +1,10 @@
-<app-herosheet [hero]='selectedHero'></app-herosheet>
+<app-herosheet [hero]='selectedHero' style="float:right; margin-left: 10px;"></app-herosheet>
 
 <div class='heroesgrid'>
   <mat-card *ngFor='let hero of heroes' class="herocard" [class.selected]='hero === selectedHero' (click)='onSelect(hero)'>
-    <mat-card-header>
-      <div mat-card-avatar>
-        <!--TODO: insert avatar image-->
+      <div class='headavatar'>
+        <img src="./assets/img/avatars/head_{{hero.id}}.png"/>
       </div>
-      <mat-card-title>{{hero.name}}</mat-card-title>
-      <mat-card-subtitle>subtitle</mat-card-subtitle>
-    </mat-card-header>
-    <mat-card-content>
-      <p>
-        Short description.
-      </p>
-    </mat-card-content>
+      <h2 class='heroname'>{{hero.name}}</h2>
   </mat-card>
 </div>
