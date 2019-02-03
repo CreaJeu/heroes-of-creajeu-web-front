@@ -1,7 +1,7 @@
 <div class='history'>
   <mat-card class='history-record' *ngFor='let record of history'>
     <mat-card-content>
-      {{record.date}} - {{record.hero_name}} unlocked achievement {{record.ach_title}}
+      <b>{{record.hero_name}}</b> unlocked achievement <b>{{record.ach_title}}</b> - {{record.date | date:'medium'}}
     </mat-card-content>
   </mat-card>
 </div>
