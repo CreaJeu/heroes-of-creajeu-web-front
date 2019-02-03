@@ -1,22 +1,39 @@
-.achievementsgrid { 
+.achievementsgrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 210px);
     align-items: stretch;
+    grid-gap: 20px;
     margin: 20px;
 }
 .achievementcard {
     background-color: #EFEEEE;
     padding: 20px;
+    text-align: center;
+    height: 250px;
+}
+p.xpbonus {
+    font-size: 16px;
+    text-align: right;
+    color: #f26627;
+    font-weight: bold;
 }
 .achievementlogo {
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
-    background-color: #F26627;
-    float: left;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+.achievementlogo img {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
 }
 .achievementcard h2 {
     font-size: 16px;
     color: #325D79;
+}
+p.description {
+    text-align: justify;
+    text-align-last: center;
 }
