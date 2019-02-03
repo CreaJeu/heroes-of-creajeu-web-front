@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HerosheetComponent } from './herosheet/herosheet.component';
 import { HeroeslistComponent } from './heroeslist/heroeslist.component';
 import { AchievementlistComponent } from './achievementlist/achievementlist.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './material.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,7 +17,6 @@ import { HistoryComponent } from './history/history.component';
     HerosheetComponent,
     HeroeslistComponent,
     AchievementlistComponent,
-    DashboardComponent,
     HistoryComponent
   ],
   imports: [
